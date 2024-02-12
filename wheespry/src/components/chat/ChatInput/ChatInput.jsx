@@ -4,11 +4,23 @@ const { TextArea } = Input;
 
 function ChatInput() {
   return (
-    <div className="flex bg-white px-4 py-2 items-stretch">
+    <div className="flex bg-white p-4 items-stretch">
       <div className="flex-grow mr-2">
-        <TextArea autoSize={{ minRows: 1, maxRows: 6 }} />
+        <TextArea autoSize={{ minRows: 2, maxRows: 6 }} />
       </div>
-      <Button className="flex-none" style={{ height: "100%" }}>
+      <Button
+        type="default"
+        danger
+        className="flex-none mr-1 "
+        style={{ height: "100%" }}
+      >
+        Stop
+      </Button>
+      <Button
+        type="primary"
+        className="flex-none bg-blue-500"
+        style={{ height: "100%" }}
+      >
         Submit
       </Button>
     </div>
