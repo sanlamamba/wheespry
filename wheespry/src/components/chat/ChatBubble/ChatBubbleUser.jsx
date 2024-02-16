@@ -1,7 +1,6 @@
 import React from "react";
 
 function ChatBubbleUser({ chat, user }) {
-  console.log("USER ", user.color);
   return (
     <div
       className={`bg-white px-4 py-2 mr-11 flex-col rounded border-${user.color}-500 border my-1`}
